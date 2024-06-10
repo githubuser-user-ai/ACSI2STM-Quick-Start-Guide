@@ -27,9 +27,7 @@ That mode has not been tested on Atari TT030 and Falcon030. The TOS on these mac
 #### 3A.1 - Setting date and time
 In GemDrive mode, you can use any tool to set the date, such as `CONTROL.ACC` or `XCONTROL.ACC`. GemDrive redirects all system calls to the STM32 so the internal clock isn't used anymore.
 
-3B ACSI mode - Using microSD card ACSI mode
-
- 
+### 3B ACSI mode - Using microSD card ACSI mode
 
 Use a ready-made ACSI disk image.
 If you have a bootable hard disk image, the following sections will describe how to use it.
@@ -37,7 +35,6 @@ These hard disk images are the same using by the HATARI emulator on PC and simil
 They are also hard dick images preloaded with games and application available on the internet you can use the same way.
 For copyright reasons, I only supply empty, ready to use images on this page.
 ​
-
 #### 3B.1 - Transferring a disk image to a raw SD card
 
 Using a raw SD card is a bit faster than copying the image file.
@@ -54,20 +51,19 @@ To transfer images to the disk, you can use Raspberry Pi Imager:
 Here a short video showing how to setup an image with ICD Driver: https://youtu.be/kdNR6F6j5io
 Here a short video showing how to setup an image with PP HDDriver: https://youtu.be/3sT4ueO1-7E
 
-Here is the ICD655 Driver
-https://www.16-32bit.eu/_files/archives/63ce4b_ccdfc6f34217437ea4086139b8463f0c.zip?dn=icdp655a.zip
+Here is the ICD655 Driver : [Here](https://www.16-32bit.eu/_files/archives/63ce4b_ccdfc6f34217437ea4086139b8463f0c.zip?dn=icdp655a.zip)
 ​
-3B.2 ACSI Images files:
-    Image ICD Demo 14Mb
-    Image ICD 16Mb + 4x256Mb Compatible with TOS 1.02
-    Image ICD 32Mb + 2x512Mb for TOS > 1.02
-    Image HDDriver Demo 640Mb
-    Image AHDI_BOOTABLE_16Mb_1x256Mb  (AHDI Driver used)
+#### 3B.2 ACSI Images files:
+* [Image ICD Demo 14Mb](https://www.16-32bit.eu/_files/archives/63ce4b_3082677628774ea6b7d22948327123b6.zip?dn=ICDPROD_BOOTABLE_14Mb.zip)
+* [Image ICD 16Mb + 4x256Mb Compatible with TOS 1.02](https://www.16-32bit.eu/_files/archives/63ce4b_3082677628774ea6b7d22948327123b6.zip?dn=ICDPROD_BOOTABLE_14Mb.zip)
+* [Image ICD 32Mb + 2x512Mb for TOS > 1.02](https://www.16-32bit.eu/_files/archives/63ce4b_b122616693ea48bc9eac5dcafcea65c9.zip?dn=ICDPRO_BOOTABLE_32MB_2x512MB_tos_higer_than_102_with_utils_v1_3.zip)
+* [Image HDDriver Demo 640Mb](https://www.16-32bit.eu/_files/archives/63ce4b_890f1bd292f6427ea6aa3f919798ce90.zip?dn=HDDRIVER120_BOOTABLE_SCSI_640Kb.zip)
+* [Image AHDI_BOOTABLE_16Mb_1x256Mb](https://www.16-32bit.eu/_files/archives/63ce4b_488643455a554d4296f8df1ea7175351.zip?dn=AHDI_BOOTABLE_16Mb_1x256Mb.zip)  ([AHDI Driver used](https://www.16-32bit.eu/_files/archives/63ce4b_d6d9fac01a0843d38af821cc3d2d7789.zip?dn=ahdi6061.zip))
 
-3B.3 - Setting date and time
+#### 3B.3 - Setting date and time
 In ACSI mode, ACSI2STM emulates an UltraSatan clock, so you can use UltraSatan tools such as US_SETCL.PRG and US_GETCL.PRG. GemDrive mode also responds to UltraSatan clock queries as a convenience. When the system is switched off, the STM32 clock is powered by the onboard CR2032 battery so it will keep time even when powered off.
 
-4 - Mixing GemDrive and ACSI mode
+#### 4 - Mixing GemDrive and ACSI mode
 
 Yes, it is possible to mix both modes at the same time. This will allow you to copy files into a FAT32 microSD card from your PC, then mount it on your Atari along with a microSD card containing an ACSI image with your ACSI driver such as ICD. You will then be able to copy files between GemDrive and ACSI.
 
@@ -124,16 +120,16 @@ ACSI2STM was successfully tested on the following configurations:
 
 If you want to do more than using microSD card in GemDrive mode, and how to use the card in general, please refer to the following links:
 How to insert a battery https://youtu.be/rgAsQ0IYjlg
-ACSI2STM Enclosure 3D Print STL files: Here
-ACSI2STM GitHub https://github.com/retro16/acsi2stm
-Atari ST pages by PP https://atari.8bitchip.info/
-Disk Image with ICD driver http://joo.kie.sk/?page_id=332
+
+ACSI2STM Enclosure 3D Print STL files: [Here](https://github.com/githubuser-user-ai/ACSI2STM-Quick-Start-Guide/tree/Release/ACSI2STM%20Compact%20V3%203D%20Case%20Images)
+
+ACSI2STM [GitHub](https://github.com/retro16/acsi2stm/tree/5.0)
+
+Atari ST pages by PP:  https://atari.8bitchip.info/
+Disk Image with ICD driver: http://joo.kie.sk/?page_id=332
 How to launch ST disk images (Games) from the HD: https://atari.8bitchip.info/imgrun.php
-
 Here a HD image with 196 games: https://atari.8bitchip.info/DiskImgPP1.html
-
 Atari Wiki Pages: https://www.atari-wiki.com/
-
 ​​
 #### Q/A and Trouble shouting
 
@@ -142,7 +138,6 @@ Early Atari STE from 1989 and 1990 may has DMA issue. The"bad DMA" debate is sti
 The ACSI2STM should work with both DMA chip.
 But in some case, Atari STE fitted with the "C025913-38" DMA chip may get corruptions after running for a while. It seems changing the capacitor on the motherboard solve this issue.
 More about the DMA issue here: https://exxosforum.co.uk/atari/last/DMAfix/
-
 
 #### Links
 
