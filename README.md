@@ -1,23 +1,9 @@
 # ACSI2STM-Quick-Start-Guide
 
-***
-#  This documentation is not updated anymore.
-#  Please visite https://www.16-32bit.eu/acsi2smt 
-***
-
----------------------------- 
-Where to buy:  
-https://www.ebay.fr/itm/235325745251  
-https://www.16-32bit.eu/shop
-https://www.etsy.com/listing/1632522429/acsi2stm-hard-drive-emulator-for-atari  
-
-
 This document explains the steps to get the recommended hardware and software as quickly and as simply as possible. 
 
-NOTE: This GitHub repository is specific to the ACSI2STM card I am selling via EBay, Facebook and LeBonCoin.
-See the `Photos` folder for the picture of the actual device.
-If you built your own card or bought it from someone else, please refer to the ACSI2STM GitHub https://github.com/retro16/acsi2stm
- 
+Base on the original  to the ACSI2STM GitHub https://github.com/retro16/acsi2stm 
+
 Installing the PCB
 ### 1 - Backup battery
 Before installing, insert a CR2032 battery in the socket. The battery is only needed for keeping the clock running when the ST is off.
